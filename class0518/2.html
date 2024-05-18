@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>123</div>
+    <script>
+        function add(num1 , num2){
+            return parseInt(num1) + parseInt(num2) ;
+        }
+        const res = add("1000.999" , 200)
+
+        const addRes = (num1 , num2) =>{
+            return parseInt(num1) + parseInt(num2)
+            // console.log('安安') ; 不會出現
+        }
+
+        const me = (name , ab) =>{
+            return `我是${name} , 血型${ab}`
+        }
+        const me2 = (name , ab) =>`我是${name} , 血型${ab}`
+        
+
+        console.log(res) ; 
+        console.log(addRes(200,3)) ; 
+        console.log(me('xin','B')) ; 
+        console.log(me2('xin2','2B')) ; 
+    </script>
+</body>
+</html>
