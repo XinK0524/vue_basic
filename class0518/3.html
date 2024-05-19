@@ -23,7 +23,7 @@
                     res: 0,
                     count: 10,
                     price: 100,
-                    dollar: 0 ,
+                    total: 0 ,
                 }
             },
             methods: {
@@ -38,10 +38,15 @@
                     this.res -= this.count
                 },
                 parse(){
-                    return this.price * this.res 
+                    //正確
+                    // return this.price * this.res
+                    //錯誤寫法
+                    this.total = this.price * this.res 
+                    return this.total
                 },
                 parseDollar(){
-                    return this.price * 30
+                    //錯誤寫法 ->以後用computed
+                    return this.total / 30
                 },
             },
         }).mount('#app')
